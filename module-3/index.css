@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+}
+.NAVBAR {
+  background-color: gray;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarHeading {
+  padding: 20px 20px 20px 20px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.hamburger img {
+  width: 60px;
+  display: none;
+}
+.hamburger img:hover {
+  cursor: pointer;
+}
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dropdown {
+  display: none;
+  background-color: darkblue;
+  color: white;
+  list-style: none;
+  font-size: 30px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dropdown li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  transition: 0.3s;
+  margin-top: 5px;
+  text-align: center;
+}
+.dropdown li:hover {
+  cursor: pointer;
+  background-color: rgb(32, 4, 78);
+}
+
+.rightSide .items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+
+  margin-right: 30px;
+}
+
+.rightSide .items a {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+  color: black;
+}
+main h3 {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.outer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  border: 2px solid black;
+  /* padding: 10px; */
+  margin: 30px;
+  background-color: lightgray;
+}
+.box h2 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+.box-1 h2 {
+  background-color: aqua;
+}
+.box-2 h2 {
+  background-color: pink;
+}
+.box-3 h2 {
+  background-color: lightgreen;
+}
+p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .box {
+    height: 400px;
+    overflow: auto;
+  }
+  .items a {
+    display: none;
+  }
+  .hamburger img {
+    display: flex;
+  }
+}
+@media screen and (min-width: 900px) {
+  .dropdown {
+    display: none !important;
+  }
+}
